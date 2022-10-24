@@ -7,7 +7,13 @@ import ClickIncrement from "./components/ClickIncrement";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div>
+        <img
+          src="/Users/adrianson/reactprac/demo/src/img/homeicon.png"
+          alt="home_icon"
+        />
+      </div>
       <header className="App-header">
         <ClickIncrement />
       </header>
