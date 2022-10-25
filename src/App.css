@@ -13,8 +13,80 @@
   }
 }
 
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.home-icon {
+  margin: auto;
+  height: 30px;
+  padding: 0;
+}
+
+.home-icon:hover {
+  cursor: pointer;
+}
+
+.login-box {
+  background-color: white;
+  width: 450px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.login-box-header {
+  background-color: #626ed4;
+  width: auto;
+  height: 120px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box-usercredentials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5b626b;
+}
+
+.login-labels {
+  align-self: flex-start;
+  margin-left: 42px;
+}
+
+.login-inputs {
+  width: 80%;
+  height: 30px;
+  font-size: 15px;
+}
+
+.login-button {
+  background-color: #5c68c7;
+  color: white;
+  padding: 10;
+  font-weight: 700;
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.login-button:hover {
+  background-color: #626ed4;
+  cursor: pointer;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #f8f8fa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
