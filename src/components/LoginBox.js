@@ -1,20 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 import cloud_logo from "../img/clouds-icon-13-256.png";
 
-export default function loginBox() {
+export default function LoginBox() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/`;
+    navigate(path);
+  };
+
   return (
     <div className="login-box">
       <div className="login-box-header">
-        <h2 style={{ marginTop: -5, marginBottom: 5 }}>Welcome Back !</h2>
-        <p style={{ margin: 0, color: "#B1B7EA" }}>
+        <h2 style={{ marginTop: 0, marginBottom: 5 }}>Welcome Back !</h2>
+        <p style={{ margin: 0, paddingBottom: 25, color: "#B1B7EA" }}>
           Sign in to continue to BoostRMS.
         </p>
       </div>
 
-      <div className="logo-circle">
+      {/* <div className="logo-circle">
         <img src={cloud_logo} style={{ height: 50 }} />
-      </div>
+      </div> */}
 
       <div className="login-box-usercredentials">
         <h4 className="login-labels">Email / Username</h4>
@@ -41,13 +48,15 @@ export default function loginBox() {
           paddingRight: 40,
         }}
       >
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
           <input type="checkbox" />
           <h4 style={{ color: "#5B626B", fontSize: 12, paddingLeft: 5 }}>
             Remember me
           </h4>
         </div>
-        <button className="login-button">Log In</button>
+        <button className="login-button" onClick={routeChange}>
+          Log In
+        </button>
       </div>
 
       <div
